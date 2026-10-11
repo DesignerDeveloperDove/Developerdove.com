@@ -7,6 +7,7 @@ $to = "dove51903@gmail.com";
 
 
 $name = trim($_POST["name"] ?? "");
+$SirName = trim($_POST["Sir name"] ?? "");
 $email = trim($_POST["email"] ?? "");
 $company = trim($_POST["company"] ?? "");
 $service = trim($_POST["service"] ?? "");
@@ -17,6 +18,7 @@ $message = trim($_POST["message"] ?? "");
 
 if (
     empty($name) ||
+    empty($SirName) ||
     empty($email) ||
     empty($service) ||
     empty($message)
