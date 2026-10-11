@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/Images/Dove LogoTransparent Favicon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dove — Website Designer & Developer</title>
+
+    <link rel="stylesheet" href="Developerdove.css">
+    <meta name="google-site-verification" content="y_mivlvBW0o5dFtLdkAJ09E4vXpwegDGuI8G5JaSmA8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+
+            <a href="index.html" class="logo">
+                <img src="Images/Dove LogoTransparent 300px.png" alt="Developer Dove Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="Contact.html" class="nav-button">Contact</a>
+            </nav>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="split">
+            <section class="hero-Contact">
+                <div class="container hero-content">
+    
+                    <p class="eyebrow reveal">
+                        Reach Out
+                    </p>
+    
+                    <h1>
+                        Reach Out Today and lets Build Something 
+                        <span id="highlighter">Beautiful!</span> 
+                    </h1>
+    
+                    <h2 class="hero-Contact-subtitle reveal" id="highlighter">
+                        Let's Make Your Business Stand Out Together. 
+                    </h2>
+    
+                    <p class="hero-text reveal">
+                        Fill out the form to get in touch or get a quote for your project. I hope to hear from you soon!
+                    </p>
+    
+                </div>
+            </section>
+            <section class="hero-Contact-right">
+                <div class=" hero-content">
+    
+                    <p class="Contact-eyebrow reveal">
+                        Fill out this form to get in touch!
+                    </p>
+    
+                    <form action="send-email.php" method="POST" class="Contact-form">
+                    
+                        <label for="first-name">First Name</label>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first_name"
+                            required
+                        >
+                    
+                    
+                        <label for="last-name">Last Name</label>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last_name"
+                            required
+                        >
+                    
+                    
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    
+                    
+                        <label for="service">Service of Interest</label>
+                    
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a service
+                            </option>
+                    
+                            <option value="Website Design">
+                                Website Design
+                            </option>
+                    
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+                    
+                            <option value="SEO">
+                                SEO
+                            </option>
+                    
+                            <option value="Website Maintenance">
+                                Website Maintenance
+                            </option>
+                    
+                            <option value="Other">
+                                Other
+                            </option>
+                        </select>
+                    
+                    
+                        <label for="message">Message</label>
+                    
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                        ></textarea>
+                    
+                    
+                        <button type="submit">
+                            Send Message
+                        </button>
+                    
+                    </form>
+                        
+    
+                </div>
+            </section>
+
+        </section>
+
+      
+
+
+        <footer>
+
+            <div class="container footer-inner">
+    
+                <span>
+                    © 2026 Dove.
+                </span>
+    
+                <span>
+                    Website Designer & Developer Dove
+                </span>
+    
+            </div>
+    
+        </footer>
+
+    <script src="Developerdove.js"></script>
