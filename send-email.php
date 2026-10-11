@@ -1,15 +1,10 @@
 <?php
 
-// =========================================
-// YOUR EMAIL
-// =========================================
+
 
 $to = "dove51903@gmail.com";
 
 
-// =========================================
-// GET FORM DATA
-// =========================================
 
 $name = trim($_POST["name"] ?? "");
 $email = trim($_POST["email"] ?? "");
@@ -19,9 +14,6 @@ $budget = trim($_POST["budget"] ?? "");
 $message = trim($_POST["message"] ?? "");
 
 
-// =========================================
-// BASIC VALIDATION
-// =========================================
 
 if (
     empty($name) ||
@@ -42,16 +34,11 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 
-// =========================================
-// EMAIL SUBJECT
-// =========================================
+
 
 $subject = "New Website Inquiry from " . $name;
 
 
-// =========================================
-// EMAIL CONTENT
-// =========================================
 
 $emailBody = "
 
@@ -79,9 +66,6 @@ $message
 ";
 
 
-// =========================================
-// EMAIL HEADERS
-// =========================================
 
 $headers = "From: Website Contact Form <noreply@developerdove.com>\r\n";
 
@@ -90,15 +74,13 @@ $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 
-// =========================================
-// SEND EMAIL
-// =========================================
+// SEND part
 
 if (mail($to, $subject, $emailBody, $headers)) {
 
     // Email sent successfully
 
-    header("Location: thank-you.html");
+    header("Location: Contact.html");
     exit;
 
 } else {
