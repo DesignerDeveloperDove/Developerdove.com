@@ -9,9 +9,7 @@ $to = "dove51903@gmail.com";
 $name = trim($_POST["name"] ?? "");
 $SirName = trim($_POST["Sir name"] ?? "");
 $email = trim($_POST["email"] ?? "");
-$company = trim($_POST["company"] ?? "");
 $service = trim($_POST["service"] ?? "");
-$budget = trim($_POST["budget"] ?? "");
 $message = trim($_POST["message"] ?? "");
 
 
@@ -38,14 +36,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 
 
-$subject = "New Website Inquiry from " . $name;
+$subject = "Site Innquery From" . $name;
 
 
 
 $emailBody = "
 
-NEW WEBSITE INQUIRY
-===================
+Here is the sich!
 
 Name:
 $name
@@ -53,14 +50,11 @@ $name
 Email:
 $email
 
-Company:
-$company
+
 
 Service:
 $service
 
-Budget:
-$budget
 
 Message:
 $message
